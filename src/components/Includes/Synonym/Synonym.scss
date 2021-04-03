@@ -1,0 +1,53 @@
+.synonym {
+  background: #fff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 11px;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__text {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #344273;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 20px;
+  }
+
+  &__actions {
+    flex-shrink: 0;
+  }
+
+  &__action {
+    margin-right: 13px;
+    opacity: 0.5;
+    padding: 0;
+    background: none;
+    outline: none;
+    border: none;
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+
+    svg {
+      vertical-align: middle;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

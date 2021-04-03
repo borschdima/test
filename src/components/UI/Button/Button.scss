@@ -1,0 +1,72 @@
+.btn {
+  padding: 8px 12px;
+  color: #fff;
+  text-transform: lowercase;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  border-radius: 3px;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  &:active {
+    background-color: transparent;
+  }
+
+  &-primary {
+    background-color: #344273;
+    border: 2px solid #344273;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: #344273;
+      }
+    }
+
+    &:active {
+      color: #344273;
+    }
+  }
+
+  &-success {
+    background-color: #5e9574;
+    border: 2px solid #5e9574;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: #5e9574;
+      }
+    }
+
+    &:active {
+      color: #5e9574;
+    }
+  }
+
+  &-danger {
+    background-color: #955e5e;
+    border: 2px solid #955e5e;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: #955e5e;
+      }
+    }
+
+    &:active {
+      color: #955e5e;
+    }
+  }
+}
